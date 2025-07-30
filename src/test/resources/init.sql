@@ -13,8 +13,8 @@ ALTER SEQUENCE hotel_amenity_seq RESTART WITH 1;
 INSERT INTO addresses (id, house_number, street, city, country, post_code)
 VALUES
     (1, 10, 'Street1', 'Minsk', 'Belarus', '100000'),
-    (2, 20, 'Street2', 'Grodno', 'Belarus', '200000'),
-    (3, 30, 'Street3', 'Brest', 'Belarus', '300000');
+    (2, 20, 'Street2', 'Grodno', 'BELARUS', '200000'),
+    (3, 30, 'Street3', 'Brest', 'BLR', '300000');
 
 INSERT INTO contacts (id, phone, email)
 VALUES
