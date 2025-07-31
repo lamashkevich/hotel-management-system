@@ -17,6 +17,6 @@ public class ArrivalTime {
     @SequenceGenerator(name = "arrival_times_seq", sequenceName = "arrival_times_seq", allocationSize = 50)
     private Long id;
     private String checkIn;
-    private String checkOut; //Todo Optional
+    private String checkOut;
 
 }
