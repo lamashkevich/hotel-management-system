@@ -27,6 +27,13 @@ public class GlobalExceptionHandler {
         return errors;
     }
 
+    @ExceptionHandler(HistogramCreationException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public String handleHistogramCreationException(HistogramCreationException e) {
+        log.error(e.getMessage());
+        return e.getMessage();
+    }
+
     @ExceptionHandler(HotelCreationException.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public String handleHotelCreationException(HotelCreationException e) {
