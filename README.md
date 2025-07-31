@@ -1,5 +1,6 @@
 # Hotel Management System
 > Разработано на основе [технического задания](./task.txt).
+
 ## Технологии
 - Maven
 - Java 17
@@ -8,11 +9,10 @@
 - Liquibase
 - H2
 
----
 ## Профили
 - `postgres` - для быстрой смены БД на PostgreSQL
 
----
+
 ## Запуск
 
 ### H2
@@ -38,7 +38,7 @@
     POSTGRES_PASSWORD=root
     POSTGRES_USER=postgres
     ```
-> Эти переменные используются только Docker Compose для запуска контейнера с базой данных
+   > Эти переменные используются только Docker Compose для запуска контейнера с базой данных
 3. Запустите PostgreSQL в контейнере
     ```bash
     docker compose up --build -d
@@ -49,11 +49,9 @@
     export POSTGRES_PASSWORD=root
     mvn spring-boot:run "-Dspring-boot.run.profiles=postgres"
     ```
----
 ## Swagger
 - Swagger-ui: http://localhost:8092/swagger.html
 - Api-docs: http://localhost:8092/api-docs
 
----
 ## Контакты
 - Yauheni Lamashkevich - [@lamashkevich](https://github.com/lamashkevich)
